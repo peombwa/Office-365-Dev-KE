@@ -3,7 +3,10 @@
     export class App {
         constructor() {
             angular.module("CognitiveServiceApp", ["ngRoute"])
-                .controller("MainController", ["$scope","$log",Controllers.MainController]);
+                .config(["$locationProvider", "$routeProvider", Configs.RouteConfig])
+                .service("OfficeService", ["$log", Services.OfficeService])
+                .controller("MainController", ["$scope", "$log", Controllers.MainController])
+                .controller("TranslatorController", ["$scope", "$log","OfficeService", Controllers.TranslatorController]);
 
             // initialize office.js lib
             Office.initialize = function(reason) {

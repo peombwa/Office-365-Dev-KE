@@ -3,9 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 14
 VisualStudioVersion = 14.0.25420.1
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CognitiveServiceAddin", "CognitiveServiceAddin\CognitiveServiceAddin.csproj", "{DEBFCF10-AAE1-4868-B919-6F439153603D}"
-EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CognitiveServiceAddinWeb", "CognitiveServiceAddinWeb\CognitiveServiceAddinWeb.csproj", "{B667927F-EEC9-4EEE-A703-D1FA1DEFD2DB}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CognitiveServiceAddinWeb.Office", "CognitiveServiceAddinWeb.Office\CognitiveServiceAddinWeb.Office.csproj", "{70870161-A34A-4AEB-8EFC-77B18366E0D0}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -13,16 +13,16 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{DEBFCF10-AAE1-4868-B919-6F439153603D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{DEBFCF10-AAE1-4868-B919-6F439153603D}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{DEBFCF10-AAE1-4868-B919-6F439153603D}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
-		{DEBFCF10-AAE1-4868-B919-6F439153603D}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{DEBFCF10-AAE1-4868-B919-6F439153603D}.Release|Any CPU.Build.0 = Release|Any CPU
-		{DEBFCF10-AAE1-4868-B919-6F439153603D}.Release|Any CPU.Deploy.0 = Release|Any CPU
 		{B667927F-EEC9-4EEE-A703-D1FA1DEFD2DB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{B667927F-EEC9-4EEE-A703-D1FA1DEFD2DB}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{B667927F-EEC9-4EEE-A703-D1FA1DEFD2DB}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{B667927F-EEC9-4EEE-A703-D1FA1DEFD2DB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{70870161-A34A-4AEB-8EFC-77B18366E0D0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{70870161-A34A-4AEB-8EFC-77B18366E0D0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{70870161-A34A-4AEB-8EFC-77B18366E0D0}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{70870161-A34A-4AEB-8EFC-77B18366E0D0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{70870161-A34A-4AEB-8EFC-77B18366E0D0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{70870161-A34A-4AEB-8EFC-77B18366E0D0}.Release|Any CPU.Deploy.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

@@ -4,22 +4,22 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{DEBFCF10-AAE1-4868-B919-6F439153603D}</ProjectGuid>
+    <ProjectGuid>{70870161-A34A-4AEB-8EFC-77B18366E0D0}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>CognitiveServiceAddin</RootNamespace>
-    <AssemblyName>CognitiveServiceAddin</AssemblyName>
+    <RootNamespace>CognitiveServiceAddinWeb.Office</RootNamespace>
+    <AssemblyName>CognitiveServiceAddinWeb.Office</AssemblyName>
     <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
     <TargetOfficeVersion>15.0</TargetOfficeVersion>
     <FileAlignment>512</FileAlignment>
     <ProjectTypeGuids>{C1CDDADD-2546-481F-9697-4EA41081F2FC};{14822709-B5A1-4724-98CA-57A101D1B079};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
     <IncludeAssemblyInPackage>False</IncludeAssemblyInPackage>
-    <AppFeaturePartId>{abaaa912-842a-4096-a714-aa674afa4877}</AppFeaturePartId>
-    <WspPartId>{068df347-163f-4658-ab3e-188a6c3d7cab}</WspPartId>
-    <WorkflowPartId>{6ee7c654-f94d-4e8e-8e28-1a701e71051b}</WorkflowPartId>
-    <CspkgPartId>{0e167db9-0b65-44ed-89ed-613139588e38}</CspkgPartId>
-    <SqlPackagePartId>{99f43257-bc9d-4616-9f02-7250fc7153ec}</SqlPackagePartId>
-    <ProjectMode>OfficeApp</ProjectMode>
+    <AppFeaturePartId>{9bec52b4-7000-4282-8287-ef7f73e4cd71}</AppFeaturePartId>
+    <WspPartId>{4d98224d-16bd-4f63-9c3e-252cd309d7a7}</WspPartId>
+    <WorkflowPartId>{e8ff1562-03d5-4f3b-bcbf-6b3c0f71ef06}</WorkflowPartId>
+    <CspkgPartId>{5064f575-bd45-4a98-bb65-c0279806fe52}</CspkgPartId>
+    <SqlPackagePartId>{ca1a497e-eed7-4b09-ab87-bd5cf9e4fa6c}</SqlPackagePartId>
+    <ProjectMode>MailApp</ProjectMode>
     <MinimumVisualStudioVersion>14.0</MinimumVisualStudioVersion>
     <MinimumOfficeToolsVersion>14.0</MinimumOfficeToolsVersion>
   </PropertyGroup>
@@ -43,10 +43,10 @@
     <UseVSHostingProcess>false</UseVSHostingProcess>
   </PropertyGroup>
   <ItemGroup>
-    <None Include="CognitiveServiceAddinManifest\SharePointProjectItem.spdata">
-      <SharePointProjectItemId>{c67dfb0a-7428-483d-b910-6cf3caa02e00}</SharePointProjectItemId>
+    <None Include="CognitiveServiceAddinWeb.OfficeManifest\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{3b9028d2-df46-4535-b044-5ddc0bb3ad16}</SharePointProjectItemId>
     </None>
-    <Content Include="CognitiveServiceAddinManifest\CognitiveServiceAddin.xml">
+    <Content Include="CognitiveServiceAddinWeb.OfficeManifest\CognitiveServiceAddinWeb.Office.xml">
       <OpcRelationship>manifest-oemanifest</OpcRelationship>
     </Content>
   </ItemGroup>

@@ -90,6 +90,8 @@
     </None>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="App\views\TranslatorPage.html" />
+    <Content Include="App_README.txt" />
     <Content Include="Content\fabric.components.css" />
     <Content Include="Content\fabric.components.min.css" />
     <Content Include="Content\fabric.components.rtl.css" />
@@ -98,6 +100,7 @@
     <Content Include="Content\fabric.min.css" />
     <Content Include="Content\fabric.rtl.css" />
     <Content Include="Content\fabric.rtl.min.css" />
+    <Content Include="Content\Office.css" />
     <Content Include="Content\OfficeThemes.css" />
     <Content Include="Functions\FunctionFile.html" />
     <Content Include="Functions\FunctionFile.js" />
@@ -449,7 +452,9 @@
     <TypeScriptCompile Include="App\appModule.ts" />
     <TypeScriptCompile Include="App\configs\AppConfig.ts" />
     <TypeScriptCompile Include="App\configs\RouteConfig.ts" />
+    <TypeScriptCompile Include="App\controllers\TranslatorController.ts" />
     <TypeScriptCompile Include="App\controllers\MainController.ts" />
+    <TypeScriptCompile Include="App\services\officeService.ts" />
     <TypeScriptCompile Include="Scripts\typings\angularjs\angular-animate.d.ts" />
     <TypeScriptCompile Include="Scripts\typings\angularjs\angular-component-router.d.ts" />
     <TypeScriptCompile Include="Scripts\typings\angularjs\angular-cookies.d.ts" />
@@ -464,9 +469,7 @@
   <ItemGroup>
     <Service Include="{4A0DDDB5-7A95-4FBF-97CC-616D07737A77}" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="App\views\" />
-  </ItemGroup>
+  <ItemGroup />
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
     <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
