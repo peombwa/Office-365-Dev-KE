@@ -1,0 +1,23 @@
+﻿body {
+    margin: 0;
+}
+
+.header {
+    padding: 10px 5px;
+}
+
+.container {
+    margin: 10px;
+}
+
+.push-left {
+    float: left;
+}
+
+.push-right {
+    float: right;
+}
+
+textarea {
+    min-height: 200px !important;
+}

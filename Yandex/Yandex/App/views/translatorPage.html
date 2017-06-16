@@ -1,0 +1,25 @@
+﻿<div class="container">
+    <div style="display: inline-block;">
+        <button class="ms-Button ms-Button--primary push-left" ng-click="TranslatorCtrl.getBodyText()">
+            <span class="ms-Button-label">Get Text</span> 
+        </button>
+    </div>
+
+    <div class="ms-TextField ms-TextField--multiline">
+        <label class="ms-Label">Selected Text</label>
+        <textarea class="ms-TextField-field" 
+                  ng-model="selectedText"
+                  rows="30"></textarea>
+    </div>
+
+    <div style="display: inline-block;">
+        <button class="ms-Button ms-Button--primary push-right" ng-click="TranslatorCtrl.translateBodyText()">
+            <span class="ms-Button-label">Translate Text</span>
+        </button>
+    </div>
+    
+    <label class="ms-Label">Translated Text</label>
+    <div class="ms-font-m">
+        {{translatedText}}
+    </div>
+</div>
