@@ -1,3 +1,13 @@
-﻿<h1>
-    TranslatorP age html
-</h1>
+﻿
+<input type="button" value="Get Text" ng-click="TranslatorCtrl.getSelectedText()"/>
+<input type="button" value="Get Text" ng-click="TranslatorCtrl.translateSelectedText()" />
+
+<h3>Selected Text</h3>
+<div>
+    {{selectedText}}
+</div>
+
+<h3>Translated Text</h3>
+<div>
+    {{translatedText}}
+</div>

@@ -1,0 +1,45 @@
+﻿<div class="ms-Grid">
+    <div class="ms-Grid-row">
+        <!-- AD Users list -->
+        <div class="ms-Grid-col ms-u-sm12 ms-u-md6 ms-u-lg6">
+            <input type="button" value="List Users" ng-click="MainCtrl.listADUsers()"/>
+            <div ng-if="adUsers.length > 0">
+                <label>AD Users</label>
+                <div class="ms-List" style="width: 100%">
+                    <div class="ms-ListItem" ng-repeat="adUser in adUsers">
+                        <span class="ms-ListItem-primaryText">{{adUser.displayName}}</span>
+                        <span class="ms-ListItem-secondaryText">{{adUser.mail}}</span>
+                        <span class="ms-ListItem-tertiaryText">{{adUser.id}}</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Meeting times -->
+        <div class="ms-Grid-col ms-u-sm12 ms-u-md6 ms-u-lg6">
+            <input type="button" value="Find Meeting Times" ng-click="MainCtrl.findMeetingTimes()"/>
+
+            <div>
+                <label ng-if="meetingTimeSuggestions.length > 0">>Meeting Times</label>
+                
+                <div ng-repeat="meetingTime in meetingTimeSuggestions">
+                    <label>{{meetingTime.meetingTimeSlot.start.dateTime | date: "MMM d, y h:mm:ss a"}} - {{meetingTime.meetingTimeSlot.end.dateTime | date: "MMM d, y h:mm:ss a"}}</label>
+                    <div><strong>Confidence:</strong> {{meetingTime.confidence}}%</div>
+                    <div><strong>Suggestion Reason:</strong> {{meetingTime.suggestionReason}}</div>
+                    <table>
+                        <tr>
+                            <th>Attendee</th>
+                            <th>Free/ Busy Status</th>
+                        </tr>
+                        <tr ng-repeat="attendee in meetingTime.attendeeAvailability">
+                            <td>{{attendee.attendee.emailAddress.address}}</td>
+                            <td>{{attendee.availability}}</td>
+                        </tr>
+                    </table>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</div>
+
