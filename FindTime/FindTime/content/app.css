@@ -17,3 +17,6 @@ td, th {
 th{
     background-color: #dddddd;
 }
+.meetingTimePanel{
+    padding:10px 0;
+}

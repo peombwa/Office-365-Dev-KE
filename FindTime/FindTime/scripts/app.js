@@ -23,7 +23,7 @@ var TimeFinder;
             function AppConfig() {
             }
             AppConfig.GraphEndPoint = "https://graph.microsoft.com/v1.0";
-            AppConfig.ClientId = "2c82f2b7-9179-4f9a-83f8-dc1b452fc5a2";
+            AppConfig.ClientId = "{Your App ID here}";
             return AppConfig;
         }());
         Configs.AppConfig = AppConfig;

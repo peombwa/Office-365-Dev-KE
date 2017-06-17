@@ -32,7 +32,7 @@
             <div>
                 <label class="ms-font-l" ng-if="meetingTimeSuggestions.length > 0">Meeting Times</label>
                 
-                <div ng-repeat="meetingTime in meetingTimeSuggestions">
+                <div ng-repeat="meetingTime in meetingTimeSuggestions" class="meetingTimePanel">
                     <div class="ms-bgColor-teal">
                         <label class="ms-font-s ms-fontColor-white">{{meetingTime.meetingTimeSlot.start.dateTime | date: "MMM d, y h:mm:ss a"}} - {{meetingTime.meetingTimeSlot.end.dateTime | date: "MMM d, y h:mm:ss a"}}</label>
                         <div class="ms-font-s ms-fontColor-white"><strong>Confidence:</strong> {{meetingTime.confidence}}%</div>
