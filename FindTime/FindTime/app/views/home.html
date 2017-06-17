@@ -2,9 +2,15 @@
     <div class="ms-Grid-row">
         <!-- AD Users list -->
         <div class="ms-Grid-col ms-u-sm12 ms-u-md6 ms-u-lg6">
-            <input type="button" value="List Users" ng-click="MainCtrl.listADUsers()"/>
+
+            <div style="display: inline-block;">
+                <button class="ms-Button ms-Button--primary push-right" ng-click="MainCtrl.listADUsers()">
+                    <span class="ms-Button-label">List Users</span>
+                </button>
+            </div>
+
             <div ng-if="adUsers.length > 0">
-                <label>AD Users</label>
+                <label class="ms-font-l">AD Users</label>
                 <div class="ms-List" style="width: 100%">
                     <div class="ms-ListItem" ng-repeat="adUser in adUsers">
                         <span class="ms-ListItem-primaryText">{{adUser.displayName}}</span>
@@ -17,15 +23,21 @@
         
         <!-- Meeting times -->
         <div class="ms-Grid-col ms-u-sm12 ms-u-md6 ms-u-lg6">
-            <input type="button" value="Find Meeting Times" ng-click="MainCtrl.findMeetingTimes()"/>
+            <div style="display: inline-block;">
+                <button class="ms-Button ms-Button--primary push-right" ng-click="MainCtrl.findMeetingTimes()">
+                    <span class="ms-Button-label">Find Meeting Times</span>
+                </button>
+            </div>
 
             <div>
-                <label ng-if="meetingTimeSuggestions.length > 0">>Meeting Times</label>
+                <label class="ms-font-l" ng-if="meetingTimeSuggestions.length > 0">Meeting Times</label>
                 
                 <div ng-repeat="meetingTime in meetingTimeSuggestions">
-                    <label>{{meetingTime.meetingTimeSlot.start.dateTime | date: "MMM d, y h:mm:ss a"}} - {{meetingTime.meetingTimeSlot.end.dateTime | date: "MMM d, y h:mm:ss a"}}</label>
-                    <div><strong>Confidence:</strong> {{meetingTime.confidence}}%</div>
-                    <div><strong>Suggestion Reason:</strong> {{meetingTime.suggestionReason}}</div>
+                    <div class="ms-bgColor-teal">
+                        <label class="ms-font-s ms-fontColor-white">{{meetingTime.meetingTimeSlot.start.dateTime | date: "MMM d, y h:mm:ss a"}} - {{meetingTime.meetingTimeSlot.end.dateTime | date: "MMM d, y h:mm:ss a"}}</label>
+                        <div class="ms-font-s ms-fontColor-white"><strong>Confidence:</strong> {{meetingTime.confidence}}%</div>
+                        <div class="ms-font-s ms-fontColor-white"><strong>Suggestion Reason:</strong> {{meetingTime.suggestionReason}}</div>
+                    </div>
                     <table>
                         <tr>
                             <th>Attendee</th>
