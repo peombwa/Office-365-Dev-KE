@@ -26,7 +26,7 @@ var YandexAddin;
         var AppConfig = (function () {
             function AppConfig() {
             }
-            AppConfig.TranslatorKey = "{Your yandex key}";
+            AppConfig.TranslatorKey = "trnsl.1.1.20170616T132444Z.8a6358f25ffa04c9.4c7c24e4236de49256686cac785724cdc1e9f725";
             AppConfig.TranslatorEndpoint = "https://translate.yandex.net/api/v1.5/tr.json/translate";
             return AppConfig;
         }());
@@ -88,7 +88,6 @@ var YandexAddin;
                     .done(function (result) {
                     that.$timeout(0).then(function () {
                         that.$scope.translatedText = result;
-                        console.log(result);
                     });
                 })
                     .fail(function (error) {
@@ -157,8 +156,7 @@ var YandexAddin;
             TranslatorService.prototype.translateText = function (text, to, from) {
                 var that = this;
                 var deferred = $.Deferred();
-                var qureryString = '?key=' + YandexAddin.Configs.AppConfig.TranslatorKey
-                    + '&text=' + text + '&lang=' + from + '-' + to + '&format=plain';
+                var qureryString = "?key=" + YandexAddin.Configs.AppConfig.TranslatorKey + "&text=" + text + "&lang=" + from + "-" + to + "&format=plain";
                 // issue request to translate
                 that.$http({
                     method: 'GET',

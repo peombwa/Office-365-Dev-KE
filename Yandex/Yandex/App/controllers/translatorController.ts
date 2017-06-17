@@ -30,12 +30,10 @@
 
         public translateBodyText() {
             var that: TranslatorController = this;
-
             that.translatorService.translateText(that.$scope.selectedText,"en","ru")
                 .done((result) => {
                     that.$timeout(0).then(() => {
                         that.$scope.translatedText = result;
-                        console.log(result);
                     });
                 })
                 .fail((error) => {

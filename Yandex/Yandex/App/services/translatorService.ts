@@ -10,9 +10,7 @@
             var that: TranslatorService = this;
             var deferred = $.Deferred();
 
-            var qureryString: string = '?key=' + Configs.AppConfig.TranslatorKey
-                + '&text=' + text + '&lang=' + from + '-' + to + '&format=plain';
-
+            var qureryString: string = `?key=${Configs.AppConfig.TranslatorKey}&text=${text}&lang=${from}-${to}&format=plain`;
                 // issue request to translate
                 that.$http({
                     method: 'GET',
